@@ -13,7 +13,7 @@ html {
 .subtext {
     font-size: 20px;
     color: #fff;
-    vertical-align: text-bottom;
+    margin-top: 30px;
 }
 section {
     height: 100vh;
@@ -24,6 +24,8 @@ section {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    flex-direction: column;
+    position: relative;
 }
 #sec-1 {
     background: linear-gradient(45deg, #2A0944, #3B185F, #A12568, #FEC260);
@@ -47,7 +49,7 @@ section {
     width: 30px;
     border: 2px solid #fff;
     position: absolute;
-    left: 50%;
+    left: 49%;
     bottom: 20px;
     border-radius: 50px;
     cursor: pointer;
@@ -67,6 +69,35 @@ section {
     animation: scroll-down 1s ease-in-out infinite;
 }
 .scroll-down::before {
+    top: 30%;
+    animation-delay: 0.3s;
+}
+
+.scroll-top {
+    height: 50px;
+    width: 30px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 49%;
+    bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.scroll-top::before,
+.scroll-top::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid #fff;
+    border-bottom: transparent;
+    border-right: transparent;
+    animation: scroll-top 1s ease-in-out infinite;
+}
+.scroll-top::before {
     top: 30%;
     animation-delay: 0.3s;
 }
@@ -95,6 +126,23 @@ section {
         opacity: 1;
     }
     100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+@keyframes scroll-top {
+    100% {
+        
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    0% {
         top: 90%;
         opacity: 0;
     }
