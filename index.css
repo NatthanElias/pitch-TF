@@ -27,6 +27,20 @@ section {
     flex-direction: column;
     position: relative;
 }
+.text {
+    font-size: 70px;
+    color: #fff;
+    line-height: -40px;
+    list-style-type: "•";
+}
+#it1:hover {
+    list-style-type: ">";
+    font-size: 75px;
+}
+#it2:hover {
+    list-style-type: ">";
+    font-size: 75px;
+}
 #sec-1 {
     background: linear-gradient(45deg, #2A0944, #3B185F, #A12568, #FEC260);
     background-size: 300% 300%;
