@@ -32,15 +32,28 @@ section {
     color: #fff;
     line-height: -40px;
     list-style-type: "•";
+    cursor: default;
+    margin-bottom: 90px;
 }
-#it1:hover {
+.cit {
+    font-size: 50px;
+    color: #fff;
+    font-style: italic;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cit h2 {
+    width: 40%;
+}
+
+.items:hover {
     list-style-type: ">";
     font-size: 75px;
 }
-#it2:hover {
-    list-style-type: ">";
-    font-size: 75px;
-}
+
 #sec-1 {
     background: linear-gradient(45deg, #2A0944, #3B185F, #A12568, #FEC260);
     background-size: 300% 300%;
@@ -53,10 +66,10 @@ section {
     background-color: #3B185F;
 }
 #sec-4 {
-    background-color: #A12568;
+    background-color: #2A0944;
 }
 #sec-5 {
-    background-color: #FEC260;
+    background-color: #A12568;
 }
 .scroll-down {
     height: 50px;
